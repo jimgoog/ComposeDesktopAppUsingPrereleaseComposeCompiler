@@ -32,6 +32,7 @@ allprojects {
     }
 }
 
+// Suppress version compatibility check, sicne this pre-release was built for Kotlin 1.7.20-RC
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs += listOf(
